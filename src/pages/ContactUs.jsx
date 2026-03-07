@@ -42,7 +42,7 @@ export default function ContactUs() {
 
   const contactInfo = {
     companyName: "COMO GRIT d.o.o",
-    address: "Industrial Zone, Street Name 123, 10000 Zagreb, Croatia",
+    address: "Rooseveltova 12, 21000 Split, Croatia",
     registrationNumber: "VAT: HR12345678901",
     phone: "+385 1 234 5678",
     email: "service@comogrit.com",
@@ -54,23 +54,27 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-white via-slate-50 to-white">
       <div className="pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
 
-          <div className="text-center mb-16 sm:mb-20">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">Contact Us</h1>
-            <div className="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
-            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed px-4">
-              Get in touch with our team. We're here to answer your questions and discuss your metal fabrication project needs.
+          <div className="text-center mb-16 sm:mb-24">
+            <div className="inline-block mb-4">
+              <div className="flex items-center gap-3">
+                <div className="h-12 w-1 bg-gradient-to-b from-blue-600 to-slate-900"></div>
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900">Get In Touch</h1>
+              </div>
+            </div>
+            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed px-4 mt-4">
+              Contact our team to discuss your metal fabrication project or schedule a consultation
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
 
-            <div className="bg-slate-50 rounded-lg shadow-lg p-8 border-2 border-slate-200 hover:border-blue-600 transition-colors duration-300">
-              <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
-                <div className="w-1 h-6 bg-blue-600"></div>
+            <div className="bg-white rounded-xl shadow-2xl p-8 border border-slate-200 hover:shadow-2xl hover:border-blue-600 transition-all duration-300">
+              <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+                <div className="w-1 h-8 bg-gradient-to-b from-blue-600 to-slate-900"></div>
                 Send us a message
               </h2>
 
@@ -92,7 +96,7 @@ export default function ContactUs() {
                       required
                       value={formData.fullName}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-slate-300 rounded bg-white text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:outline-none transition-all"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg bg-white text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 focus:outline-none transition-all"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -107,7 +111,7 @@ export default function ContactUs() {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-slate-300 rounded bg-white text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:outline-none transition-all"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg bg-white text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 focus:outline-none transition-all"
                       placeholder="Your company name"
                     />
                   </div>
@@ -123,7 +127,7 @@ export default function ContactUs() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-slate-300 rounded bg-white text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:outline-none transition-all"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg bg-white text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 focus:outline-none transition-all"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -139,7 +143,7 @@ export default function ContactUs() {
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-slate-300 rounded bg-white text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:outline-none transition-all"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg bg-white text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 focus:outline-none transition-all"
                       placeholder="What is this regarding?"
                     />
                   </div>
@@ -155,7 +159,7 @@ export default function ContactUs() {
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border-2 border-slate-300 rounded bg-white text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg bg-white text-slate-900 placeholder-slate-400 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 focus:outline-none transition-all resize-none"
                       placeholder="Tell us more about your fabrication project..."
                     />
                   </div>
@@ -178,7 +182,7 @@ export default function ContactUs() {
 
                   <button
                     type="submit"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded font-semibold transition-all duration-300 shadow-lg hover:shadow-blue-600/30 active:scale-98"
+                    className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-blue-600/40 active:scale-95"
                   >
                     Send Message
                   </button>
@@ -186,9 +190,9 @@ export default function ContactUs() {
               )}
             </div>
 
-            <div className="bg-slate-50 rounded-lg shadow-lg p-8 border-2 border-slate-200 hover:border-blue-600 transition-colors duration-300">
-              <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
-                <div className="w-1 h-6 bg-blue-600"></div>
+            <div className="bg-white rounded-xl shadow-2xl p-8 border border-slate-200 hover:shadow-2xl hover:border-blue-600 transition-all duration-300">
+              <h2 className="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
+                <div className="w-1 h-8 bg-gradient-to-b from-blue-600 to-slate-900"></div>
                 Contact Information
               </h2>
 
@@ -254,9 +258,9 @@ export default function ContactUs() {
                   </h3>
                   <div className="space-y-4">
                     {contactInfo.keyStaff.map((staff, idx) => (
-                      <div key={idx} className="bg-white rounded p-4 border-2 border-slate-200 hover:border-blue-600 transition-colors">
+                      <div key={idx} className="bg-slate-50 rounded-lg p-4 border border-slate-200 hover:border-blue-600 transition-colors">
                         <h4 className="font-semibold text-slate-900 text-sm mb-1">{staff.name}</h4>
-                        <p className="text-blue-600 text-xs font-medium mb-2">{staff.role}</p>
+                        <p className="text-blue-600 text-xs font-bold mb-2">{staff.role}</p>
                         <div className="space-y-1">
                           <a href={`tel:${staff.phone}`} className="block text-slate-600 hover:text-blue-600 text-xs transition-colors">
                             {staff.phone}
@@ -273,23 +277,24 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <div className="bg-slate-50 rounded-lg shadow-lg overflow-hidden border-2 border-slate-200">
-            <div className="p-6 border-b border-slate-200">
+          <div className="bg-white rounded-xl shadow-2xl overflow-hidden border border-slate-200">
+            <div className="p-8 border-b border-slate-200 bg-gradient-to-r from-slate-50 to-white">
               <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-3">
-                <MapPin className="w-6 h-6 text-blue-600" />
+                <div className="w-1 h-8 bg-gradient-to-b from-blue-600 to-slate-900"></div>
                 Our Location
               </h2>
+              <p className="text-slate-600 mt-2">Rooseveltova 12, 21000 Split, Croatia</p>
             </div>
-            <div className="w-full h-96">
+            <div className="w-full h-96 bg-slate-100">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.8157958669346!2d15.9658!3d45.8150!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDQ4JzU0LjAiTiAxNcKwNTcnNTYuOSJF!5e0!3m2!1sen!2shr!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2854.1234567890!2d16.4572!3d43.5081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13355d26e8e8e8e9%3A0x1234567890abcdef!2sRooseveltova%2012%2C%2021000%20Split%2C%20Croatia!5e0!3m2!1sen!2shr!4v1700000000000"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="COMO GRIT Location"
+                title="COMO GRIT Location - Rooseveltova 12, Split, Croatia"
                 className="w-full h-full"
               ></iframe>
             </div>
