@@ -287,17 +287,7 @@ export default function ContactUs() {
               <p className="text-slate-400 text-xs sm:text-sm mt-2">Rooseveltova 12, 21000 Split, Croatia</p>
             </div>
             <div className="w-full h-96 bg-slate-900">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1446.9875022032882!2d16.451569238962932!3d43.50285698829211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRooseveltova%2012%2C%2021000%20Split%2C%20Croatia!5e0!3m2!1sen!2s!4v1772888431955!5m2!1sen!2s"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="COMO GRIT Location - Rooseveltova 12, Split, Croatia"
-                className="w-full h-full"
-              ></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1446.9875022032882!2d16.451569238962932!3d43.50285698829211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRooseveltova%2012%2C%2021000%20Split%2C%20Croatia!5e0!3m2!1sen!2s!4v1772888431955!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
