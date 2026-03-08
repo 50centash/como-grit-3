@@ -58,10 +58,15 @@ export default function ContactUs() {
   };
 
   const contactInfo = {
-    address: "Rooseveltova 12, 21000 Split, Croatia",
-    phone: "+385 1 234 5678",
-    email: "service@comogrit.com",
-  };
+  address: "Rooseveltova 12, 21000 Split, Croatia",
+  phones: [
+    "+385 99 500 157",
+    "+385 99 500 1059",
+    "+385 99 500 1038",
+    "+385 99 500 1037",
+  ],
+  email: "service@comogrit.com",
+};
 
   return (
     <div className="min-h-screen bg-white overflow-hidden">
@@ -194,19 +199,28 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 animate-fadeInUp">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-white" />
-                    </div>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-slate-900 mb-1">{t('phoneLabel')}</h3>
-                    <a href={`tel:${contactInfo.phone}`} className="text-blue-600 text-sm">
-                      {contactInfo.phone}
-                    </a>
-                  </div>
-                </div>
+               <div className="flex items-start gap-4 animate-fadeInUp">
+  <div className="flex-shrink-0">
+    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
+      <Phone className="w-6 h-6 text-white" />
+    </div>
+  </div>
+
+ <div>
+  <h3 className="font-bold text-slate-900 mb-1">{t('phoneLabel')}</h3>
+
+  <div className="flex flex-col">
+    {contactInfo.phones.map((phone, index) => (
+      <span
+        key={index}
+        className="text-blue-600 text-sm"
+      >
+        {phone}
+      </span>
+    ))}
+  </div>
+</div>
+</div>
 
                 <div className="flex items-start gap-4 animate-fadeInUp">
                   <div className="flex-shrink-0">

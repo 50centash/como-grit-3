@@ -7,6 +7,7 @@ import Service3 from '../assets/service3.webp'
 import Service4 from '../assets/service4.webp'
 import Service5 from '../assets/service5.webp'
 import Service6 from '../assets/service6.webp'
+import Service9 from '../assets/service9.webp'
 
 export default function Services() {
   const { t } = useTranslation();
@@ -77,7 +78,33 @@ export default function Services() {
         t("metalCastingBullet3")
       ],
       imageUrl: Service6,
-    }
+    },
+     {
+      id: 7,
+      title: t("Metalworking / Machining Tools Fabrication"),
+      description: t("metalCastingDesc"),
+      bullets: [
+        t("Drill"),
+        t("Reamers"),
+        t("Molding Cutter"),
+                t("Milling Cutter"),
+                 t("Screw-In Heads"),
+                  t("Deburrer")
+
+      ],
+      imageUrl: Service6,
+    },
+    {
+      id: 8,
+      title: t("CNC Machining"),
+      description: t("metalMeltingDesc"),
+      bullets: [
+        t("metalMeltingBullet1"),
+        t("metalMeltingBullet2"),
+        t("metalMeltingBullet3")
+      ],
+      imageUrl: Service9,
+    },
   ];
 
   return (
