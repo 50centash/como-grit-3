@@ -27,6 +27,16 @@ export default function Construction() {
       desc: t("constructionService4Desc"),
       image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
+        {
+      title: t("constructionService4Title"),
+      desc: t("constructionService4Desc"),
+      image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+        {
+      title: t("constructionService4Title"),
+      desc: t("constructionService4Desc"),
+      image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
 
   ];
 
