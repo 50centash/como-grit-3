@@ -1,9 +1,58 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { ArrowRight, CircleCheck as CheckCircle } from "lucide-react";
 
 export default function Construction() {
 
   const { t } = useTranslation();
+
+  const services = [
+    {
+      title: t("constructionService1Title"),
+      desc: t("constructionService1Desc"),
+      image: "https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      title: t("constructionService2Title"),
+      desc: t("constructionService2Desc"),
+      image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      title: t("constructionService3Title"),
+      desc: t("constructionService3Desc"),
+      image: "https://images.pexels.com/photos/416405/pexels-photo-416405.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      title: t("constructionService4Title"),
+      desc: t("constructionService4Desc"),
+      image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      title: "Steel Framework",
+      desc: "Expert installation of steel structures and frameworks for industrial and commercial buildings.",
+      image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      title: "Renovation Works",
+      desc: "Complete renovation and restoration services for existing structures and facilities.",
+      image: "https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      title: "Project Management",
+      desc: "End-to-end project management ensuring timely delivery and quality control.",
+      image: "https://images.pexels.com/photos/3760069/pexels-photo-3760069.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      title: "Safety & Compliance",
+      desc: "Full adherence to safety regulations and building codes throughout all projects.",
+      image: "https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      title: "Maintenance Services",
+      desc: "Ongoing maintenance and support services for completed construction projects.",
+      image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ];
 
   return (
     <div className="bg-white text-slate-800">
@@ -56,52 +105,42 @@ export default function Construction() {
 
       </section>
 
-      {/* SERVICES */}
+      {/* SERVICES - 3x3 Grid with Images */}
       <section className="bg-slate-100 py-20 px-6">
 
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
 
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-4xl font-bold text-center mb-4">
             {t("constructionServicesTitle")}
           </h2>
+          <div className="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-              <h3 className="font-semibold text-lg mb-3">
-                {t("constructionService1Title")}
-              </h3>
-              <p className="text-sm text-slate-600">
-                {t("constructionService1Desc")}
-              </p>
-            </div>
+            {services.map((service, idx) => (
+              <div
+                key={idx}
+                className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:scale-105"
+              >
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  <h3 className="absolute bottom-4 left-4 right-4 text-white font-bold text-xl">
+                    {service.title}
+                  </h3>
+                </div>
 
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-              <h3 className="font-semibold text-lg mb-3">
-                {t("constructionService2Title")}
-              </h3>
-              <p className="text-sm text-slate-600">
-                {t("constructionService2Desc")}
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-              <h3 className="font-semibold text-lg mb-3">
-                {t("constructionService3Title")}
-              </h3>
-              <p className="text-sm text-slate-600">
-                {t("constructionService3Desc")}
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-              <h3 className="font-semibold text-lg mb-3">
-                {t("constructionService4Title")}
-              </h3>
-              <p className="text-sm text-slate-600">
-                {t("constructionService4Desc")}
-              </p>
-            </div>
+                <div className="p-6">
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    {service.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
 
           </div>
 
@@ -140,23 +179,67 @@ export default function Construction() {
 
       </section>
 
-      {/* CTA */}
-      <section className="bg-blue-600 text-white py-16 px-6 text-center">
+      {/* CTA - Redesigned */}
+      <section className="relative py-24 px-6 overflow-hidden">
 
-        <h2 className="text-3xl font-bold mb-4">
-          {t("constructionCtaTitle")}
-        </h2>
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=1920')"
+          }}
+        ></div>
 
-        <p className="text-blue-100 mb-8">
-          {t("constructionCtaText")}
-        </p>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-slate-800/90 to-blue-900/85"></div>
 
-        <Link
-          className="group relative overflow-hidden bg-blue-600 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 inline-flex items-center gap-2 rounded-lg shadow-lg active:scale-95"
-          to="/contact"
-        >
-          {t("contactUs")}
-        </Link>
+        <div className="relative z-10 max-w-5xl mx-auto text-center">
+
+          <div className="inline-block bg-blue-600/20 backdrop-blur-sm border border-blue-500/30 rounded-full px-6 py-2 mb-6">
+            <span className="text-blue-300 font-semibold text-sm uppercase tracking-wider">
+              Ready to Build?
+            </span>
+          </div>
+
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            {t("constructionCtaTitle")}
+          </h2>
+
+          <p className="text-slate-300 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+            {t("constructionCtaText")}
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <Link
+              className="group relative overflow-hidden bg-white text-slate-900 px-10 py-5 text-lg font-bold transition-all duration-300 inline-flex items-center gap-3 rounded-lg shadow-2xl hover:shadow-white/20 hover:scale-105 active:scale-95"
+              to="/contact"
+            >
+              <span className="relative z-10">{t("contactUs")}</span>
+              <ArrowRight className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+
+            <a
+              href="tel:+385995001059"
+              className="group bg-transparent border-2 border-white text-white px-10 py-5 text-lg font-bold transition-all duration-300 inline-flex items-center gap-3 rounded-lg hover:bg-white hover:text-slate-900 hover:scale-105 active:scale-95"
+            >
+              Call Us Now
+            </a>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
+            <div className="flex items-center justify-center gap-3 text-white">
+              <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0" />
+              <span className="text-sm font-medium">Licensed & Insured</span>
+            </div>
+            <div className="flex items-center justify-center gap-3 text-white">
+              <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0" />
+              <span className="text-sm font-medium">Quality Guaranteed</span>
+            </div>
+            <div className="flex items-center justify-center gap-3 text-white">
+              <CheckCircle className="w-6 h-6 text-green-400 flex-shrink-0" />
+              <span className="text-sm font-medium">On-Time Delivery</span>
+            </div>
+          </div>
+
+        </div>
 
       </section>
 
