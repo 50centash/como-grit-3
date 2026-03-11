@@ -27,31 +27,7 @@ export default function Construction() {
       desc: t("constructionService4Desc"),
       image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
-    {
-      title: "Steel Framework",
-      desc: "Expert installation of steel structures and frameworks for industrial and commercial buildings.",
-      image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-      title: "Renovation Works",
-      desc: "Complete renovation and restoration services for existing structures and facilities.",
-      image: "https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-      title: "Project Management",
-      desc: "End-to-end project management ensuring timely delivery and quality control.",
-      image: "https://images.pexels.com/photos/3760069/pexels-photo-3760069.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-      title: "Safety & Compliance",
-      desc: "Full adherence to safety regulations and building codes throughout all projects.",
-      image: "https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-    {
-      title: "Maintenance Services",
-      desc: "Ongoing maintenance and support services for completed construction projects.",
-      image: "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg?auto=compress&cs=tinysrgb&w=600"
-    }
+
   ];
 
   return (
