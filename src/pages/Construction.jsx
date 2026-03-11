@@ -124,37 +124,7 @@ export default function Construction() {
 
       </section>
 
-      {/* PROJECT IMAGES */}
-      <section className="py-20 px-6 max-w-6xl mx-auto">
-
-        <h2 className="text-3xl font-bold text-center mb-12">
-          {t("constructionProjectsTitle")}
-        </h2>
-
-        <div className="grid md:grid-cols-3 gap-6">
-
-          <img
-            src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc"
-            alt="construction project"
-            className="rounded-lg shadow"
-          />
-
-          <img
-            src="https://images.unsplash.com/photo-1590272456521-1bbe160a18ce"
-            alt="building construction"
-            className="rounded-lg shadow"
-          />
-
-          <img
-            src="https://images.unsplash.com/photo-1509395176047-4a66953fd231"
-            alt="industrial construction"
-            className="rounded-lg shadow"
-          />
-
-        </div>
-
-      </section>
-
+   
       {/* CTA - Redesigned */}
       <section className="relative py-24 px-6 overflow-hidden">
 
