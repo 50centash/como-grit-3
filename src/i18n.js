@@ -35,7 +35,7 @@ const resources = {
       constructionService4Title: "Structural & Concrete Works",
       constructionService4Desc: "Reinforced concrete foundations, structural frameworks, and load-bearing building elements.",
 
-      constructionProjectsTitle: "Construction Projects",
+
 
       constructionCtaTitle: "Start Your Construction Project",
       constructionCtaText: "Contact COMO GRIT d.o.o today to discuss residential, commercial, or industrial construction projects.",
