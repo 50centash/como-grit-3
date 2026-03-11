@@ -113,11 +113,7 @@ export default function Footer() {
 <li>
   {t("phoneLabel")}:
 </li>
-<li>
-  <a className="hover:text-white transition-colors">
-    +385 99 500 157
-  </a>
-</li>
+
 <li>
   <a className="hover:text-white transition-colors">
     +385 99 500 1059
