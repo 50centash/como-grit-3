@@ -26,17 +26,7 @@ export default function Construction() {
       title: t("constructionService4Title"),
       desc: t("constructionService4Desc"),
       image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-        {
-      title: t("constructionService4Title"),
-      desc: t("constructionService4Desc"),
-      image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
-        {
-      title: t("constructionService4Title"),
-      desc: t("constructionService4Desc"),
-      image: "https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=600"
-    },
+    }
 
   ];
 
@@ -172,12 +162,7 @@ export default function Construction() {
               <ArrowRight className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
 
-            <a
-              href="tel:+385995001059"
-              className="group bg-transparent border-2 border-white text-white px-10 py-5 text-lg font-bold transition-all duration-300 inline-flex items-center gap-3 rounded-lg hover:bg-white hover:text-slate-900 hover:scale-105 active:scale-95"
-            >
-              Call Us Now
-            </a>
+           
           </div>
 
           <div className="grid sm:grid-cols-3 gap-8 max-w-3xl mx-auto">

@@ -44,7 +44,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                to="/About"
+                to="/about"
                 className="block text-slate-400 hover:text-white transition-colors"
               >
                 {t("footerAbout")}
@@ -58,14 +58,20 @@ export default function Footer() {
               </Link>
 
               <Link
-                to="/Gallery"
+                to="/gallery"
                 className="block text-slate-400 hover:text-white transition-colors"
               >
                 {t("Gallery")}
               </Link>
+                 <Link
+                to="/construction"
+                className="block text-slate-400 hover:text-white transition-colors"
+              >
+                {t("footerBuildingConstriction")}
+              </Link>
 
               <Link
-                to="/Contact"
+                to="/contact"
                 className="block text-slate-400 hover:text-white transition-colors"
               >
                 {t("footerContact")}

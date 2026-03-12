@@ -5,13 +5,13 @@ import { ArrowRight } from "lucide-react";
 
 import gallery1 from "../assets/gallery7.webp";
 import gallery2 from "../assets/gallery8.webp";
-import gallery3 from "../assets/service7.webp";
+import image3 from '../assets/image3.webp'
 import gallery4 from "../assets/gallery5.webp";
 
 export default function GalleryPreview() {
   const { t } = useTranslation();
 
-  const images = [gallery1, gallery2, gallery3, gallery4];
+  const images = [gallery1, gallery2, image3, gallery4];
 
   return (
     <section id="gallery" className="py-20 bg-slate-50">

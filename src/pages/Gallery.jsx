@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import Gallery1 from '../assets/gallery1.webp'
 import Gallery2 from '../assets/gallery2.webp'
 import Gallery3 from '../assets/gallery3.webp'
 import Gallery4 from '../assets/gallery4.webp'
@@ -13,14 +12,10 @@ import Gallery9 from '../assets/gallery9.webp'
 import Gallery10 from '../assets/gallery10.webp'
 import Gallery11 from '../assets/gallery11.webp'
 import Gallery12 from '../assets/gallery12.webp'
-import Gallery13 from '../assets/gallery13.webp'
-import Gallery14 from '../assets/gallery14.webp'
-import Gallery15 from '../assets/gallery15.webp'
-import Gallery16 from '../assets/gallery16.webp'
-import Gallery17 from '../assets/gallery17.webp'
-import Gallery18 from '../assets/gallery18.webp'
-import Gallery19 from '../assets/gallery19.webp'
-import Gallery20 from '../assets/gallery20.webp'
+import Gallery21 from '../assets/image18.webp'
+import Gallery22 from '../assets/image19.webp'
+import Gallery23 from '../assets/image4.webp'
+
 
 export default function Gallery() {
   const { t } = useTranslation();
@@ -29,7 +24,6 @@ export default function Gallery() {
   const [isLoading, setIsLoading] = useState(true);
 
 const galleryImages = [
-  { id: 1, url: Gallery1 },
   { id: 2, url: Gallery2 },
   { id: 3, url: Gallery3 },
   { id: 4, url: Gallery4 },
@@ -41,15 +35,10 @@ const galleryImages = [
   { id: 10, url: Gallery10 },
   { id: 11, url: Gallery11 },
   { id: 12, url: Gallery12 },
-  { id: 13, url: Gallery13 },
-  { id: 14, url: Gallery14 },
-  { id: 15, url: Gallery15 },
-  { id: 16, url: Gallery16 },
-  { id: 17, url: Gallery17 },
-  { id: 18, url: Gallery18 },
-  { id: 19, url: Gallery19 },
-  { id: 20, url: Gallery20 },
-
+  
+{ id: 21, url: Gallery21 },
+  { id: 22, url: Gallery22 },
+  { id: 23, url: Gallery23 },
 ];
 
   const handleImageClick = (index) => {
@@ -106,7 +95,7 @@ const galleryImages = [
     {t('galleryPageTitle')}
   </h1>
   <div className="w-20 h-1 bg-blue-600 mx-auto mb-6 animate-expandWidth"></div>
-  <div className="text-base sm:text-lg text-slate-600 max-w-5xl mx-auto leading-relaxed px-4">
+  <div className="text-base sm:text-lg text-slate-600  max-w-5xl mx-auto leading-relaxed px-4">
     <p className="mb-4">
       {t('galleryPageIntro1')} <span className="text-blue-600">{t('galleryPageIntro2')}</span> {t('galleryPageIntro3')} <span className="text-blue-600">{t('galleryPageIntro4')}</span>{t('galleryPageIntro5')}
     </p>

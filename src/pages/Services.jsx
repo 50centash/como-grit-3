@@ -2,17 +2,17 @@ import React from 'react';
 import { useTranslation } from "react-i18next";
 
 // Asset Imports
-import Service1 from '../assets/service1.webp'
-import Service2 from '../assets/service2.webp'
-import Service3 from '../assets/service3.webp'
-import Service4 from '../assets/service4.webp'
-import Service5 from '../assets/service5.webp'
-import Service6 from '../assets/service6.webp'
-import Service9 from '../assets/service9.webp'
-import Service10 from '../assets/service10.webp'
-import Service11 from '../assets/service11.webp'
-import Service12 from '../assets/service12.webp'
-
+import Service1 from '../assets/image13.webp'
+import Service2 from '../assets/image3.webp'
+import Service3 from '../assets/image15.webp'
+import Service4 from '../assets/image16.webp'
+import Service5 from '../assets/image14.webp'
+import Service6 from '../assets/image4.webp'
+import Service9 from '../assets/image2.webp'
+import Service10 from '../assets/image1.webp'
+import Service11 from '../assets/image11.webp'
+import Service12 from '../assets/image12.webp'
+import Service13 from '../assets/image20.webp'
 export default function Services() {
   const { t } = useTranslation();
 
@@ -159,6 +159,18 @@ export default function Services() {
         t("."),
       ],
       imageUrl: Service12,
+    },
+    {
+      id: 11,
+      title: t("CNCManufacturingAutoParts"),
+      description: t("CNCManufacturingAutoPartsDesc"),
+      bullets: [
+        t("CNCManufacturingAutoPartsBullet1"),
+        t("CNCManufacturingAutoPartsBullet2"),
+        t("CNCManufacturingAutoPartsBullet3"),
+        
+      ],
+      imageUrl: Service13,
     },
   ];
 

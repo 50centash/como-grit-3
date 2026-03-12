@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from "react-i18next";
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom'; // or 'next/link' if using Next.js
-import AboutHero from '../assets/abouthero.webp';
+import AboutHero from '../assets/image17.webp';
 
 function About() {
   const { t } = useTranslation();

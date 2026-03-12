@@ -3,10 +3,10 @@ import { ShieldCheck, Cpu, Clock, Check } from 'lucide-react';
 import { useTranslation } from "react-i18next";
 
 // Assets Imports
-import AboutHero from '../assets/abouthero.webp';
-import service4 from '../assets/service4.webp';
-import service5 from '../assets/service5.webp';
-import service6 from '../assets/service6.webp';
+import AboutHero from '../assets/image17.webp';
+import service1 from '../assets/image16.webp';
+import service2 from '../assets/image14.webp';
+import service3 from '../assets/image4.webp';
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -16,19 +16,19 @@ const AboutUs = () => {
     {
       title: t("uncompromisingQuality"),
       description: t("uncompromisingQualityDesc"),
-      image: service4,
+      image: service1,
       icon: <ShieldCheck className="w-6 h-6 text-blue-600" />
     },
     {
       title: t("technicalExpertise"),
       description: t("technicalExpertiseDesc"),
-      image: service5,
+      image: service2,
       icon: <Cpu className="w-6 h-6 text-blue-600" />
     },
     {
       title: t("fastReliableDelivery"),
       description: t("fastReliableDeliveryDesc"),
-      image: service6,
+      image: service3,
       icon: <Clock className="w-6 h-6 text-blue-600" />
     }
   ];
